@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.boggle-board {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.boggle-board div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+.boggle-board div:focus {
+  outline: 2px solid #007bff;
+  background-color: #e9f5ff;
+}
+
+.score-timer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.text-field-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.text-field {
+  margin-right: 10px;
+  width: 80%;
+}
+
+.button {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .boggle-board {
+    width: 100%;
+  }
+  .score-timer,
+  .text-field-button {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-field {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .button {
+    width: 100%;
+  }
+}
